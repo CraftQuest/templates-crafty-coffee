@@ -56,3 +56,5 @@ const craftquest = mandelbrot({
 
 // tell Fractal to use the configured theme by default
 fractal.web.theme(craftquest);
+
+fractal.web.set('builder.dest', 'static'); // destination for the static export
