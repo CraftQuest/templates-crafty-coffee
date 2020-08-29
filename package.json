@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "fractal": "fractal start --sync",
-    "build:css": "postcss src/css/styles.css -o build/css/styles.css",
+    "build:css": "postcss src/css/styles.css -o public/css/styles.css",
     "watch": "watch 'npm run build:css' ./src/css",
     "start": "concurrently \"npm:watch\" \"npm:fractal\"",
     "build": "fractal build"

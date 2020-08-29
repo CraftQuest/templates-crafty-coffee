@@ -40,7 +40,7 @@ fractal.docs.set('ext', '.twig');
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
-fractal.web.set('static.path', path.join(__dirname, 'build'));
+fractal.web.set('static.path', path.join(__dirname, 'public'));
 
 // require the Mandelbrot theme module
 const mandelbrot = require('@frctl/mandelbrot');
