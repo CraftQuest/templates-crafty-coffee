@@ -7,7 +7,7 @@
     "build:staticCSS": "postcss src/css/styles.css -o static/css/styles.css",
     "watch": "watch 'npm run build:css' ./src/css",
     "start": "concurrently \"npm:watch\" \"npm:fractal\"",
-    "build": "fractal build && npm run build:staticCSS"
+    "build": "cp public/img/*.jpg static/img/ && fractal build && npm run build:staticCSS"
   },
   "dependencies": {
     "@frctl/fractal": "^1.3.0",
