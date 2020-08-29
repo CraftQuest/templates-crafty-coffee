@@ -1,0 +1,15 @@
+{% extends "inc/_layout.twig" %}
+{% block main %}
+    {% include '@navigation' %}
+    {% include '@image-internal-bg-header' with { pageTitle: 'Our Drinks' } %}
+    {% include '@breadcrumbs' %}
+    <main class="mb-12">
+        <div class="flex items-center justify-center mb-10">
+            {% include "@article-lede" %}
+        </div>
+        <div class="flex items-center justify-center">
+            {% include "@table" %}
+        </div>
+    </main>
+    {% include "@footer" %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "inc/_layout.twig" %}
+{% block main %}
+    {% include '@navigation' %}
+    {% include '@image-internal-bg-header' with { pageTitle: 'Spilling the Beans' } %}
+    {% include '@breadcrumbs' %}
+    <main>
+        {% for post in 1..4 %}
+        <div class="flex items-center justify-center">
+            {% include "@article" %}
+        </div>
+        {% endfor %}
+    </main>
+    {% include "@footer" %}
+{% endblock %}

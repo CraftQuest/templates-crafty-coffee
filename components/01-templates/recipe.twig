@@ -1,0 +1,32 @@
+{% extends "inc/_layout.twig" %}
+{% block main %}
+    {% include '@navigation' %}
+    {% include '@image-internal-bg-header' with { pageTitle: 'Recipes' } %}
+    {% include '@breadcrumbs' %}
+    <main>
+        <div class="flex items-center justify-center">
+            <article class="prose lg:prose-lg my-10">
+                {% include "@article-title" with { text: "Iced Americano" } %}
+                {% include "@callout-box" %}
+                {% include "@paragraph-text" %}
+                {% include "@paragraph-text" %}
+                {% include "@recipe-ingredients" %}
+                {% include "@image" %}
+                {% include "@paragraph-text" %}
+                {% include "@recipe-steps" %}
+                {% include "@paragraph-text" %}
+                {% include "@recipe-steps" %}
+                {% include "@image-with-caption" %}
+                {% include "@paragraph-text" %}
+                {% include "@paragraph-text" %}
+                {% include "@paragraph-text" %}
+                {% include "@recipe-steps" %}
+                {% include "@image" %}
+                {% include "@paragraph-text" %}
+                {% include "@warning-box" %}
+                {% include "@paragraph-text" %}
+            </article>
+        </div>
+    </main>
+
+{% endblock %}

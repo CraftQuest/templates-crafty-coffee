@@ -1,0 +1,18 @@
+{% extends "inc/_layout.twig" %}
+{% block main %}
+    {% include '@navigation' %}
+    {% include '@image-internal-bg-header' with { pageTitle: 'Our Drinks' } %}
+    {% include '@breadcrumbs' %}
+    <main class="mb-12">
+        <div class="flex items-center justify-center my-10">
+            {% include '@article-lede' with { text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse ipsam pariatur laborum ipsa debitis." } %}
+        </div>
+        <div class="flex items-center justify-center">
+            {% include "@content" %}
+        </div>
+        <div class="flex items-center justify-center">
+            {% include "@button" with { label: "Make this Drink"} %}
+        </div>
+    </main>
+    {% include "@footer" %}
+{% endblock %}
