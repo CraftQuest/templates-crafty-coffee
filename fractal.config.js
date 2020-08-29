@@ -41,3 +41,18 @@ fractal.docs.set('ext', '.twig');
  * Tell the Fractal web preview plugin where to look for static assets.
  */
 fractal.web.set('static.path', path.join(__dirname, 'build'));
+
+// require the Mandelbrot theme module
+const mandelbrot = require('@frctl/mandelbrot');
+
+
+// create a new instance with custom config options
+const craftquest = mandelbrot({
+    skin: 'black',
+    nav: ['search', 'docs', 'components'],
+    highlightStyles: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css',
+    favicon: 'https://craftycasts-com-userphotos.s3.amazonaws.com/craftquest-social-square-400x400.png',
+});
+
+// tell Fractal to use the configured theme by default
+fractal.web.theme(craftquest);
