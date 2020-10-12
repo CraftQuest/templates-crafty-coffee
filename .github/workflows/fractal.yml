@@ -28,7 +28,7 @@ jobs:
       
       # Run fractal to build everything
       - name: build Fractal
-        run: npm run build
+        run: npm run dist
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
